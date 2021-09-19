@@ -1,0 +1,95 @@
+enchantingGUI:
+  title: "&6Enchanting Table"
+  slotAmount: 54
+  pattern:
+    - "GGGGGGGGG"
+    - "GGGGLGGGG"
+    - "GGGGGGGGG"
+    - "GGEEEEEGG"
+    - "GGEEEEEGG"
+    - "GGPGIGNGC"
+  items:
+    - "N:NEXT_BUTTON"
+    - "P:PREVIOUS_BUTTON"
+    - "G:GRAY_GLASS"
+    - "E:ENCHANTMENTS_PLACE"
+    - "I:INFO"
+    - "L:ITEM_PLACE"
+    - "C:CONFIRM_BUTTON"
+  bookItem:
+    material: ENCHANTED_BOOK
+    amount: 1
+    displayName: "&6%enchantment_name%"
+    lore:
+      - "&7Starting Level: &6%starting_level%"
+      - "&7Max Level: &6%max_level%"
+      - "&7Prices:"
+      - "%prices%"
+      - " "
+      - "&aClick left click to increase this enchantment's level!"
+      - " "
+      - "&4Click right click to decrease this enchantment's level!"
+
+#If you want to create cosmetic item, there is no need to add the "function" property, like the gray glass
+#You can add a "data" tag in case you are using an old versions of minecraft (1.12 and lower) (for example "data: 7")
+
+#If the items has a working function, there is no need to add the "disableClickEvent" tag, it will disable
+#the click automatically
+items:
+  CONFIRM_BUTTON:
+    material: "{REPLACE_MATERIAL}"
+    amount: 1
+    data: -69
+    displayName: "&aClick here to confirm enchantment"
+    lore:
+      - "Final Enchantments:"
+      - "%final_enchantments%"
+      - " "
+      - "Prices:"
+      - "%prices%"
+    function: "confirmButton"
+  ITEM_PLACE:
+    material: AIR
+    amount: 0
+    displayName: ""
+    lore:
+      - ""
+    function: itemPlace
+  ENCHANTMENTS_PLACE:
+    material: AIR
+    amount: 0
+    displayName: ""
+    lore:
+      - ""
+    function: enchantmentsPlace
+  INFO:
+    material: PAPER
+    amount: 1
+    displayName: "&6General Info"
+    lore:
+      - " "
+      - "&7Experience a new way to enchant items for different"
+      - "&7prices."
+    disableClickEvent: true
+  GRAY_GLASS:
+    material: "{REPLACE_MATERIAL}"
+    amount: 1
+    data: -69
+    displayName: " "
+    lore:
+      - ""
+    disableClickEvent: true
+  NEXT_BUTTON:
+    material: ARROW
+    amount: 1
+    displayName: "&7Next Button"
+    lore:
+      - "&7Click here to go to the next page!"
+    function: nextButton
+  PREVIOUS_BUTTON:
+    material: ARROW
+    amount: 1
+    displayName: "&7Previous Button"
+    lore:
+      - "&7Click here to go to the previous page!"
+    function: previousButton

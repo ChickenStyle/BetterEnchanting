@@ -1,0 +1,5 @@
+main: me.chickenstyle.enchanting.BetterEnchanting
+name: BetterEnchanting
+version: 1.0.0
+description: implements cool way to enchant stuff
+api-version: 1.13

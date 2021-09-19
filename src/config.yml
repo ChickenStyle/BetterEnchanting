@@ -1,0 +1,28 @@
+replaceDefaultEnchantingTable: true
+
+# If replaceDefaultEnchantingTable is false, it will load this specialEnchantingBlock
+specialEnchantingBlock:
+  allowHologram: true
+  hologramText: "&6Enchanting Table!"
+  item:
+    displayName: "&6Special Enchanting Table!"
+    lore:
+      - " "
+      - "&7Special enchanting table that"
+      - "&7allows you to choose the enchantments"
+      - "&7you want!"
+      - " "
+    recipe:
+      loadRecipe: true
+      grid:
+        - " B "
+        - "SOS"
+        - "OOO"
+      ingredients:
+        - "B:BOOK"
+        - "O:OBSIDIAN"
+        - "S:NETHER_STAR"
+
+allowCurseEnchantments: true
+ignoreItemType: false
+ignoreConflicts: false

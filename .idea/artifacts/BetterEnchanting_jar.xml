@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BetterEnchanting:jar">
+    <output-path>$PROJECT_DIR$/../../../../Test Servers/Spigot 1.8.9/plugins</output-path>
+    <root id="archive" name="BetterEnchanting.jar">
+      <element id="module-output" name="BetterEnchanting" />
+    </root>
+  </artifact>
+</component>
